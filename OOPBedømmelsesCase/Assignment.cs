@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOPBedømmelsesCase
 {
-    internal class Assignment
+    public class Assignment
     {
         public static List<Assignment> Assignments = new();
         public Patient? Patient { get; set; }
