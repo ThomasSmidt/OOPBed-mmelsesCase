@@ -84,14 +84,15 @@
         private static bool AskForAnotherDoctor()
         {
             Console.Write("\nVil du gerne tildele patienten endnu en læge? [J/N] ");
-            ConsoleKeyInfo addAnotherDoctor = Console.ReadKey();
+            ConsoleKeyInfo key = Console.ReadKey();
+            char input = char.ToLower(key.KeyChar);
             Console.WriteLine();
 
-            if (addAnotherDoctor.KeyChar == 'j' && addAnotherDoctor != null)
+            if (input == 'j')
             {
                 return true;
             }
-            else if (addAnotherDoctor.KeyChar == 'n' && addAnotherDoctor != null)
+            else if (input == 'n')
             {
                 return false;
             }
